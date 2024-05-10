@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <link href="stylesheets/w3.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/common.css" type="text/css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Dr. Guo's Lab</title>
+    <script>
+      $(function(){
+	$("#header-placeholder").load("header.html");
+	$("#foot-placeholder").load("foot.html");
+}); </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="header-placeholder"></div>
+      <h1>Research</h1>
+      <p>High-throughput omics technologies are revolutionizing many aspects of
+        modern biology. We are entering the era of Big Data in biology research.
+        The massive sample size and high dimensionality of Big Data introduce
+        unique computational and statistical challenges, including storage
+        bottleneck, measurement errors, noise accumulation, and spurious
+        correlation.</p>
+      <p>We study data mining, machine learning, big data analysis and data
+        fusion. The primary focus of our research is on developing advanced
+        frameworks and algorithms to help biologists solve practical problems in
+        systems biology, biomedicine, and natural sciences and enable them to
+        make full use of massive, high-dimensional data for various biological
+        inquiries. </p>
+      <h2> Research Areas </h2>
+      <h3> Metaproteomics Search </h3>
+      <p>Microbial communities drive nutrient cycling in aquatic and terrestrial
+        ecosystems and influence the health of human, animal, and plant hosts.
+        The metabolic activities of a microbial community can be inferred from
+        the proteomes of its constituent microorganisms. In a typical
+        metaproteomics experiment, total proteins are extracted from
+        environmental samples of a microbial community and then measured by
+        liquid chromatography-tandem mass spectrometry (LC-MS/MS) using a
+        “shotgun” proteomics approach. Thousands of organisms in complex
+        communities lead to a much smaller number of peptide and protein
+        identifications in metaproteomics analyses of complex communities than
+        comparable proteomics analyses of single organisms. In this study, we
+        aim to develop novel database searching and filtering algorithms.</p>
+      <p> Software: <a href="https://github.com/Biocomputing-Research-Group/DeepFilter" target="_blank"> DeepFilter</a>, <a href="http://sipros.omicsbio.org">Sipros Ensemble</a>. </p>
+      <h3> Genome-wide Association Studies </h3>
+      <p> Taking the advantage of high-throughput single nucleotide polymorphism
+        (SNP) genotyping technology, large genome-wide association studies
+        (GWASs) have been considered to hold promise for unravelling complex
+        relationships between genotype and phenotype. At present, traditional
+        single-locus-based methods are insufficient to detect interactions
+        consisting of multiple-locus, which are broadly existing in complex
+        traits. In addition, statistic tests for high order epistatic
+        interactions with more than 2 SNPs propose computational and analytical
+        challenges because the computation increases exponentially as the
+        cardinality of SNPs combinations gets larger. In this project, we design
+        fast and powerful methods detect genome-wide multi-locus epistatic
+        interactions across multiple cases.</p>
+      <p> Software: <a href="project_dche.html">DCHE</a>, <a href="project_dam.html">DAM</a>,
+        <a href="project_mscd.html">MSCD</a>. </p>
+      <h3> Sequence Assembly </h3>
+      <p>Next-generation sequencing platforms not only decrease the cost of
+        metagenomics data analysis but also greatly enlarge the size of
+        metagenomic sequence datasets. A common bottleneck of available
+        assemblers is that the trade-off between the noise of the resulting
+        contigs and the gain in sequence length for better annotation has not
+        been attended enough for large-scale sequencing projects, especially for
+        the datasets with moderate coverage and a large number of nonoverlapping
+        contigs. To address this limitation and promote both accuracy and
+        efficiency, we develop a novel metagenomic sequence assembly frameworks
+        and algorithms by taking advantages of high-performance computer and
+        cyberinfrastructure.</p>
+      <p> Software: <a href="http://disco.omicsbio.org/">DISCO</a>, <a href="project_dime.html">DIME</a>.
+      </p>
+      <h3> fMRI Analysis </h3>
+      <p>An intriguing quest regarding the brain science is: what are the origin
+        and the principles behind the functional architectures, which define who
+        we are and what we are to a great extent. Compared to other methods,
+        functional Magnetic Resonance Imaging (fMRI) is one of the most common
+        ways that can explore the functional activities of the whole brain.
+        After decades of active research, there have been numerous evidence that
+        the brain function is realized and emerges from the interaction of
+        multiple concurrent neural processes or brain networks. We design novel
+        statistic models to analyze functional brain dynamics among the nodes of
+        brain networks along time periods.</p>
+      <p> Software: <a href="projects/MCMC_Block.rar">BCCPM</a>.
+      </p>
+      <div id="foot-placeholder"> </div>
+    </div>
+    
+  </body>
+</html>

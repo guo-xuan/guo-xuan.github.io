@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/w3.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/common.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Dr. Guo's Lab</title>
+    <script>
+      $(function(){
+	$("#header-placeholder").load("header.html");
+	$("#foot-placeholder").load("foot.html");
+}); </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="header-placeholder"></div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/img1.png" style="width:100%" />
+          <div class="text">Mass Spectrometry Metaproteomics</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/img2.png" style="width:100%" />
+          <div class="text">Genome-wide Association Studies</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/img3.png" style="width:100%" />
+          <div class="text">Metagenomics Sequence Assembling</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a> <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+      <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <p>Biocomputing Research Group is developing Bioinformatics tools and
+        applying these revolutionary technologies to critical scientific and
+        engineering applications related to biology.</p>
+      <div id="topics">
+        <div id="research"><img src="images/research.png" />
+          <h2><a href="research.html">Research</a></h2>
+          <p>Big Data Analytics and Machine Learning and its applications in
+            biology, environment, and health.</p>
+        </div>
+        <div id="opening"><img src="images/opening.png" />
+          <h2><a href="opening.html">Opening</a></h2>
+          <p>Ph.D. research assistant positions are available in the area of
+            Computational Biology, Big Data Analytics, and High-performance Computing.</p>
+        </div>
+      </div>
+      <div id="foot-placeholder"> </div>
+    </div>
+    <script src="js/slide_show.js"> </script>
+  </body>
+</html>
