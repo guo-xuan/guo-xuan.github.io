@@ -1,0 +1,35 @@
+.main-container {
+	width: 960px;
+	margin: auto;
+	//background: #c1fff1;
+	//border-radius: 15px 50px 30px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner {
+	position: relative;
+	height: 150px;
+	margin-bottom:10px;
+}
+
+#banner img {
+	height: 150px;
+}
+
+#group_name { 
+   position: absolute; 
+   top: 80px; 
+   right: 30px;
+}
+
+#foot-placeholder {
+	clear: both;
+	margin-top:25px;
+	margin-bottom:25px;
+	text-align:center;
+	font-size: 70%;
+}
+
+#foot-placeholder p {
+	color: grey;
+}
