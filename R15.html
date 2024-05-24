@@ -6,6 +6,25 @@
 <link href="stylesheets/common.css" type="text/css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <title>NIH R15 project</title>
+
+<style>
+        .double-underline {
+            text-decoration: underline;
+            position: relative;
+        }
+
+        .double-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: black;
+            left: 0;
+            bottom: -3px;
+            border-bottom: 1px solid black;
+        }
+</style>
+
 <script>
       $(function(){
 	$("#header-placeholder").load("header.html");
@@ -59,13 +78,31 @@
       <p>MetaLP is available at <a href="https://github.com/Biocomputing-Research-Group/MetaLP">https://github.com/Biocomputing-Research-Group/MetaLP</a></p>
     </ul>
     <hr />
-    <h3> Research Team </h3>
+	
+	<h3> Publications </h3>
+	<p>(The names of students who were under PI’s supervision are underlined; Undergraduates are double underlined. Corresponding authors are asterisked.)</p>
+	<ul>
+	  <li><span class="double-underline">Li J</span>, Xiong Y, <u>Feng S</u>, Pan C, Guo X*.  CloudProteoAnalyzer: scalable processing of big data from proteomics using cloud computing. Bioinformatics Advances. 2024. vbae024.</li>
+	  <li><u>Ebrahimi S</u>, Guo X*. Transformer-based de novo peptide sequencing for data-independent acquisition mass spectrometry. In 2023 IEEE 23rd International Conference on Bioinformatics and Bioengineering (BIBE), Dayton, OH, USA, 2023, pp. 28-35. IEEE.</li>
+	  <li><span class="double-underline">Li J</span>, Pan C, Guo X*. IDIA: An Integrative Signal Extractor for Data-Independent Acquisition Proteomics. In 2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) 2022 Dec 6 (pp. 266-269). IEEE. PMCID: PMC10077956</li>
+	  <li>Jain KG, Zhao R, Liu Y, Guo X, Yi G, Ji HL*. Wnt5a/β-catenin axis is involved in the downregulation of AT2 lineage by PAI-1. American Journal of Physiology-Lung Cellular and Molecular Physiology. 2022 Nov 1;323(5):L515-24. PMCID: PMC9602939</li>
+	  <li><u>He J</u>, <u>Liu O</u>, Guo X*. Deep Learning Based MS2 Feature Detection for Data-Independent Shotgun Proteomics. In 2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) 2022 Dec 6 (pp. 2342-2348). IEEE. PMCID: PMC10457098</li>
+	  <li><span class="double-underline">Wang S</span>, <u>Feng S</u>, Pan C, Guo X*. FineFDR: Fine-grained Taxonomy-specific False Discovery Rates Control in Metaproteomics. In 2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) 2022 Dec 6 (pp. 287-292). IEEE. PMCID: PMC9998077</li>
+	  <li><u>Feng S</u>, Ji HL, Wang H, <u>Zhang B</u>, <span class="double-underline">Sterzenbach R</span>, Pan C, Guo X*. MetaLP: An integrative linear programming method for protein inference in metaproteomics. PLOS Computational Biology. 2022 Oct 21;18(10):e1010603. PMCID: PMC9629623</li>
+	  <li><u>Feng S</u>, <span class="double-underline">Sterzenbach R</span>, Guo X*. Deep learning for peptide identification from metaproteomics datasets. Journal of Proteomics. 2021 Sep 15;247:104316. PMCID: PMC8435027</li>
+	</ul>
+	
+	<hr />
+    
+	<h3> Research Team </h3>
     <ul>
       <li>Dr. Xuan Guo (PI)</li>
       <li>Dr. Armin Milker (Co-I)</li>
       <li>Dr. Chongle Pan (Collaborator)</li>
       <li>Jiancheng Li (Graduate Research Assistant)</li>
       <li>Shichao Feng (Graduate Research Assistant)</li>
+	  <li>Bailu Zhang (Graduate Research Assistant)</li>
+	  <li>Shiva Ebrahimi (Graduate Research Assistant)</li>
       <li>Ryan Sterzenbach (Undergraduate Research Assistant)</li>
       <li>Gloire Eunice Benga Ikambouayat (Undergraduate Research Assistant)</li>
       <li>Shengze Wang (Undergraduate Research Assistant)</li>
