@@ -1,0 +1,121 @@
+---
+layout: default
+title: "Genome-wide Association Studies | BioAI Systems Lab"
+description: "Genome-wide association studies research in the BioAI Systems Lab, including multi-locus interaction discovery, multiple-disease association mapping, summary-statistics methods, and scalable computation."
+stylesheets:
+  - /stylesheets/w3.css
+  - /stylesheets/common.css
+---
+
+<h1>Genome-wide Association Studies</h1>
+
+<p><strong>BioAI Systems Lab</strong> develops computational and
+  statistical methods for large genome-wide association studies (GWAS),
+  with a particular focus on complex traits that cannot be explained well
+  by single-marker analyses alone. We study how to identify informative
+  combinations of genetic variants, how to model associations across
+  multiple diseases, and how to extract biological signal from large and
+  heterogeneous genomic datasets.</p>
+
+<p>High-throughput SNP genotyping and large public datasets have made it
+  possible to investigate genotype-phenotype relationships at an
+  unprecedented scale. At the same time, these data introduce major
+  computational and statistical challenges. Interaction effects are often
+  weak, the search space grows explosively as higher-order SNP
+  combinations are considered, and different diseases may share
+  overlapping genetic architectures. Our work addresses these issues
+  through Bayesian modeling, clustering, summary-statistics methods, and
+  high-performance computing.</p>
+
+<p>Across this area, the lab has developed tools such as
+  <strong>DCHE</strong>, <strong>DAM</strong>, <strong>MSCD</strong>,
+  <strong>JS-MA</strong>, <strong>BAM</strong>, and <strong>TS</strong>
+  for detecting genome-wide interactions and disease-associated genes
+  under different study designs and data availability settings.</p>
+
+<h2>Research Focus Areas</h2>
+
+<h3>High-Order Epistatic Interaction Detection</h3>
+<p>Many complex traits are influenced by interactions among multiple
+  loci, but exhaustive searches for high-order epistasis quickly become
+  computationally infeasible. We develop methods that reduce the search
+  burden while retaining power to discover multilocus effects that may be
+  missed by conventional single-locus GWAS pipelines.</p>
+
+<p>This direction includes tools such as <strong>DCHE</strong> and
+  <strong>MSCD</strong>, which were designed to search for informative
+  SNP combinations efficiently. These methods explore how clustering,
+  combinatorial screening, and scalable computation can make multilocus
+  discovery practical on genome-wide data.</p>
+
+<h3>Association Mapping Across Multiple Diseases</h3>
+<p>Related diseases may share common genetic mechanisms, and analyzing
+  them jointly can reveal signals that are hard to detect in isolation.
+  We study models that leverage information across multiple case groups
+  to identify disease-specific and shared association patterns more
+  effectively than separate single-disease analyses.</p>
+
+<p>Representative work in this area includes <strong>DAM</strong>,
+  <strong>BAM</strong>, and <strong>JS-MA</strong>, which explore
+  Bayesian and information-theoretic approaches for mapping associations
+  across multiple diseases. This line of research is motivated by the
+  idea that complex disorders often exhibit pleiotropy, heterogeneous
+  effects, and nontrivial overlap in their underlying variant sets.</p>
+
+<h3>Summary-Statistics-Based Gene Discovery</h3>
+<p>Many modern studies make summary statistics publicly available even
+  when individual-level genotype data cannot be shared. We are interested
+  in methods that can use these summary results to identify novel
+  disease-associated genes and prioritize promising candidates for
+  follow-up analysis.</p>
+
+<p>Our related work includes <strong>TS</strong> and other statistical
+  methods for detecting disease-associated genes from publicly available
+  GWAS summary data. These approaches help expand the practical value of
+  existing datasets by making secondary analysis possible without access
+  to raw subject-level measurements.</p>
+
+<h3>Scalable Computation for Combinatorial Genomics</h3>
+<p>Genome-wide interaction discovery is fundamentally a large-scale
+  computing problem. Even when the underlying statistical model is
+  strong, the number of possible SNP combinations can be prohibitively
+  large. We therefore study not only association models themselves, but
+  also the software and computational strategies needed to deploy them on
+  real data.</p>
+
+<p>Cloud and parallel computing are an important part of this effort.
+  Projects such as <strong>DCHE</strong> demonstrate how distributed
+  computation can accelerate high-order epistasis detection and make
+  genome-wide searches more feasible in practice.</p>
+
+<h2>Selected Software and Resources</h2>
+
+<ul>
+  <li><a href="{{ '/project_dche.html' | relative_url }}">DCHE</a>:
+    cloud computing for detecting high-order genome-wide epistatic
+    interactions via dynamic clustering.</li>
+  <li><a href="{{ '/project_dam.html' | relative_url }}">DAM</a>:
+    a Bayesian method for detecting genome-wide associations on multiple
+    diseases.</li>
+  <li><a href="{{ '/project_mscd.html' | relative_url }}">MSCD</a>:
+    the Multi-SNP Combination Set Detector for high-order SNP
+    combination discovery.</li>
+  <li><a href="{{ '/publications.html' | relative_url }}">Selected Publications</a>:
+    the lab's broader publication list, including GWAS-related papers.</li>
+</ul>
+
+<h2>Representative Publications</h2>
+
+<ul>
+  <li><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-3511-0">TS: a powerful truncated test to detect novel disease associated genes using publicly available GWAS summary data</a>, BMC Bioinformatics, 2020.</li>
+  <li><a href="https://doi.org/10.3389/fgene.2020.507038">JS-MA: A Jensen-Shannon Divergence Based Method for Mapping Genome-Wide Associations on Multiple Diseases</a>, Frontiers in Genetics, 2020.</li>
+  <li><a href="https://doi.org/10.26599/TST.2019.9010064">BAM: A block-based Bayesian method for detecting genome-wide associations with multiple diseases</a>, Tsinghua Science and Technology, 2020.</li>
+  <li><a href="https://doi.org/10.1002/gepi.22251">Powerful statistical method to detect disease-associated genes using publicly available genome-wide association studies summary data</a>, Genetic Epidemiology, 2019.</li>
+  <li><a href="https://doi.org/10.1186/1471-2105-15-102">Cloud computing for detecting high-order genome-wide epistatic interaction via dynamic clustering</a>, BMC Bioinformatics, 2014.</li>
+</ul>
+
+<p>These methods have been applied to challenging scenarios involving
+  multilocus effects, multiple related diseases, and summary-statistics
+  analysis. Across the lab's GWAS work, a recurring goal is to make
+  association discovery both more powerful and more computationally
+  practical for complex biological questions.</p>

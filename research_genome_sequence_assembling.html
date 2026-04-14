@@ -1,0 +1,115 @@
+---
+layout: default
+title: "Genome Sequence Assembling | BioAI Systems Lab"
+description: "Genome sequence assembling research in the BioAI Systems Lab, including metagenomic assembly, contig quality, scalable computation, and annotation-oriented assembly frameworks."
+stylesheets:
+  - /stylesheets/w3.css
+  - /stylesheets/common.css
+---
+
+<h1>Genome Sequence Assembling</h1>
+
+<p><strong>BioAI Systems Lab</strong> develops computational methods for
+  genome and metagenomic sequence assembly, with an emphasis on turning
+  large volumes of short-read data into longer, more informative
+  sequences for downstream biological analysis. Our work focuses
+  especially on challenging settings where microbial communities are
+  diverse, coverage is uneven, and existing assemblers struggle to
+  balance contig length, noise, and computational cost.</p>
+
+<p>Next-generation sequencing has dramatically reduced the cost of data
+  generation, but the resulting datasets are often massive, fragmented,
+  and difficult to assemble accurately. In metagenomic applications, the
+  problem becomes even harder because reads originate from multiple
+  organisms with different abundances and levels of relatedness. We study
+  algorithms and computational frameworks that improve assembly quality
+  while remaining practical for large-scale sequencing projects.</p>
+
+<p>A recurring theme in this research area is the trade-off between
+  increasing contig length and limiting assembly noise. Our goal is not
+  simply to generate longer sequences, but to produce assemblies that are
+  more useful for annotation, interpretation, and downstream biological
+  discovery.</p>
+
+<h2>Research Focus Areas</h2>
+
+<h3>De Novo Metagenomic Sequence Assembly</h3>
+<p>In many microbial and environmental studies, no single reference
+  genome adequately represents the organisms present in the sample. This
+  makes de novo assembly essential. We develop methods that reconstruct
+  sequences directly from reads, without relying on a complete reference,
+  so that previously uncharacterized organisms and genomic regions can be
+  studied more effectively.</p>
+
+<p>Our work in this direction is motivated by the need to assemble
+  complex mixtures where many reads do not overlap cleanly and coverage
+  varies substantially across organisms. These conditions can cause
+  fragmented assemblies, ambiguous graph structures, and error-prone
+  contigs if standard pipelines are applied without adaptation.</p>
+
+<h3>Contig Quality and Annotation-Oriented Assembly</h3>
+<p>Assembly quality should be judged by more than contig length alone.
+  Longer contigs are useful for annotation, but not if they accumulate
+  substantial noise or misassembly. We study frameworks that explicitly
+  consider the trade-off between extending sequences and preserving
+  biological reliability.</p>
+
+<p>This theme is central to <strong>DIME</strong>, which was developed to
+  improve both accuracy and efficiency for metagenomic sequence assembly.
+  In our prior work, systematic comparisons on synthetic and real
+  datasets showed that such framework-driven assembly can reconstruct
+  more bases, generate higher quality contigs, and improve downstream
+  annotation relative to straightforward short-read assembly workflows.</p>
+
+<h3>Read Partitioning and Large-Scale Computation</h3>
+<p>One way to make complex assembly problems more tractable is to divide
+  the read set into more coherent subsets before local assembly. We are
+  interested in partitioning strategies that reduce graph complexity and
+  improve the accuracy of reconstructed contigs, especially for large and
+  heterogeneous datasets.</p>
+
+<p>Because sequence assembly is also a high-performance computing
+  problem, we study cloud and parallel strategies that accelerate
+  assembly while keeping workflows reproducible and accessible. This
+  includes work on scalable computing for de novo metagenomic sequence
+  assembly, as well as frameworks that combine partitioning with existing
+  assembly engines.</p>
+
+<h3>Cyberinfrastructure for Practical Assembly Pipelines</h3>
+<p>Methods become most valuable when they can be deployed on real
+  datasets rather than only on small experimental benchmarks. We are
+  therefore interested in assembly software that is practical for lab and
+  collaborative use, including reusable implementations, documented
+  workflows, and infrastructure that supports large inputs and iterative
+  experimentation.</p>
+
+<p>Our broader goal is to help researchers move from raw sequencing reads
+  to biologically interpretable contigs and bins more efficiently,
+  especially in studies of microbial communities where sequence recovery
+  remains a key bottleneck.</p>
+
+<h2>Selected Software and Resources</h2>
+
+<ul>
+  <li><a href="{{ '/project_dime.html' | relative_url }}">DIME</a>:
+    a framework for de novo metagenomic sequence assembly with multiple
+    release packages and source code.</li>
+  <li><a href="http://disco.omicsbio.org/">DISCO</a>:
+    a related assembly resource referenced in the lab's broader research
+    overview.</li>
+  <li><a href="{{ '/publications.html' | relative_url }}">Selected Publications</a>:
+    the lab's full publication list, including sequence assembly papers.</li>
+</ul>
+
+<h2>Representative Publications</h2>
+
+<ul>
+  <li><a href="https://doi.org/10.1089/cmb.2014.0251">DIME: a novel framework for de novo metagenomic sequence assembly</a>, Journal of Computational Biology, 2015.</li>
+  <li>Cloud computing for de novo metagenomic sequence assembly, International Symposium on Bioinformatics Research and Applications, 2013.</li>
+</ul>
+
+<p>This research area connects algorithm design, high-performance
+  computing, and biological interpretation. By improving sequence
+  assembly in complex microbial datasets, we aim to support more accurate
+  annotation, better genome recovery, and stronger downstream analyses in
+  systems biology and environmental genomics.</p>

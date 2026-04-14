@@ -112,31 +112,33 @@
 /* topics */
 #topics {
 	width: 100%;
-}
-
-#topics::after {
-  content: "";
-  display: block;
-  clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 #research,
 #research img,
 #opening,
-#opening img {
-	width: 300px;
-  max-width: 100%;
+#opening img,
+#news,
+#news img {
+	width: 100%;
+	max-width: 100%;
 }
 
 #research,
-#opening  {
-	float: left;
-	margin-right:25px;
-	//background-color: green;
+#opening,
+#news {
+	flex: 1 1 280px;
+	max-width: 304px;
 }
 
 #research h2,
-#opening h2 {
+#opening h2,
+#news h2 {
 	margin: auto;
 	text-align:center;
 }
@@ -169,8 +171,8 @@
   }
 
   #research,
-  #opening {
-    float: none;
-    margin: 0 auto 24px;
+  #opening,
+  #news {
+    max-width: 100%;
   }
 }

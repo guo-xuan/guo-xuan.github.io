@@ -46,9 +46,9 @@
 }
 
 #banner {
-	display: flex;
+	display: grid;
+	grid-template-columns: minmax(160px, 1fr) auto minmax(160px, 1fr);
 	align-items: center;
-	justify-content: space-between;
 	gap: 20px;
 	padding: 12px 18px 10px;
 	margin-bottom:10px;
@@ -60,9 +60,12 @@
 }
 
 .site-brand {
-	flex: 0 0 auto;
 	display: flex;
 	align-items: center;
+}
+
+.site-brand--lab {
+	justify-self: start;
 }
 
 .site-brand--lab img {
@@ -73,20 +76,18 @@
 .site-brand--unt {
 	width: 180px;
 	height: 64px;
-	justify-content: flex-start;
-	overflow: hidden;
+	justify-self: end;
+	justify-content: flex-end;
 }
 
 .site-brand--unt img {
-	width: 100%;
+	width: auto;
+	max-width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: left center;
 }
 
 #group_name {
-	flex: 1 1 auto;
-	max-width: none;
+	justify-self: center;
 	text-align: center;
 }
 
@@ -123,6 +124,7 @@
 	}
 
 	#banner {
+		display: flex;
 		flex-direction: column;
 		gap: 12px;
 		padding: 12px;
@@ -139,10 +141,9 @@
 	}
 
 	.site-brand--unt img {
-		width: 100%;
+		width: auto;
+		max-width: 100%;
 		height: 100%;
-		object-fit: cover;
-		object-position: left center;
 	}
 
 	.site-nav {

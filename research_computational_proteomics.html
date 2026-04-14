@@ -1,0 +1,134 @@
+---
+layout: default
+title: "Computational Proteomics | BioAI Systems Lab"
+description: "Computational proteomics research in the BioAI Systems Lab, including metaproteomics, peptide identification, protein inference, DIA analysis, and scalable workflows."
+stylesheets:
+  - /stylesheets/w3.css
+  - /stylesheets/common.css
+---
+
+<h1>Computational Proteomics</h1>
+
+<p><strong>BioAI Systems Lab</strong> develops computational methods for
+  interpreting large-scale mass spectrometry data, with a particular
+  emphasis on metaproteomics. Our goal is to improve how peptides and
+  proteins are identified, quantified, and biologically interpreted in
+  complex microbial and environmental samples.</p>
+
+<p>In a typical metaproteomics experiment, total proteins are extracted
+  from a microbial community and measured by liquid
+  chromatography-tandem mass spectrometry (LC-MS/MS) using a shotgun
+  proteomics workflow. Unlike single-organism proteomics, the reference
+  databases for these studies can be extremely large, incomplete, and
+  highly redundant. As a result, peptide-spectrum matching, protein
+  inference, quantification, and false discovery control become much more
+  difficult. We address these bottlenecks through machine learning,
+  statistical modeling, optimization, and scalable computing.</p>
+
+<p>Our current work spans both data-dependent and data-independent
+  acquisition workflows, deep learning for peptide identification,
+  quantitative metaproteomics, and software systems that make advanced
+  proteomics analysis easier to run at scale.</p>
+
+<h2>Research Focus Areas</h2>
+
+<h3>Peptide Identification and PSM Filtering</h3>
+<p>One major focus of the lab is improving peptide-spectrum match (PSM)
+  ranking after database search. Modern metaproteomics studies often
+  generate enormous search spaces, which makes it hard to separate true
+  peptide assignments from false positives. We develop machine learning
+  methods that learn directly from measured and theoretical spectra,
+  complementing conventional search scores with data-driven evidence.</p>
+
+<p>This line of work includes <strong>DeepFilter</strong> and
+  <strong>WinnowNet</strong>, which were designed to improve peptide
+  identifications in complex metaproteomic samples. Recent lab work has
+  shown that curriculum learning and order-invariant neural models can
+  improve identifications at matched false discovery rates while also
+  reducing the need for ad hoc sample-specific tuning.</p>
+
+<h3>Protein Inference and Quantitative Metaproteomics</h3>
+<p>After peptides are identified, proteins still must be inferred from
+  shared and degenerate peptides, a challenge that becomes especially
+  severe in microbial mixtures. We study methods that integrate taxonomic
+  context, search evidence, and quantitative signals to generate more
+  reliable protein-level results from shotgun proteomics data.</p>
+
+<p>Representative efforts in this direction include
+  <strong>MetaLP</strong> for protein inference and
+  <strong>SEMQuant</strong> for quantitative metaproteomics with
+  match-between-runs support. We are also interested in taxonomy-aware
+  statistical control and in computational strategies for proteomic
+  stable isotope probing, which helps reveal which microbial populations
+  are actively assimilating labeled substrates in complex communities.</p>
+
+<h3>Data-Independent Acquisition and De Novo Analysis</h3>
+<p>Data-independent acquisition (DIA) offers broad and reproducible
+  sampling, but its spectra are highly multiplexed and require strong
+  computational deconvolution. We develop tools for extracting
+  pseudo-spectra, sequencing peptides, and identifying proteins from DIA
+  data, especially in applications where spectral libraries are
+  incomplete or the sample complexity is high.</p>
+
+<p>Our related projects include <strong>IDIA</strong>, which extracts
+  pseudo-spectra from DIA data, and <strong>Transformer-DIA</strong>,
+  which explores transformer-based de novo peptide sequencing for DIA
+  mass spectrometry. Together, these efforts aim to make DIA workflows
+  more accurate, more flexible, and more informative for complex
+  proteomics studies.</p>
+
+<h3>Scalable and Reproducible Proteomics Computing</h3>
+<p>Proteomics data volumes continue to grow, and practical adoption
+  depends on workflows that are both accurate and accessible. We build
+  scalable software systems that combine web access, high-performance
+  computing, and reproducible execution to support real biological
+  studies rather than isolated benchmark runs.</p>
+
+<p><strong>CloudProteoAnalyzer</strong> is one example of this effort. It
+  provides an end-to-end cloud-based workflow for proteomics analysis and
+  demonstrates how parallel computing can make large proteomics and
+  metaproteomics studies easier to process and compare.</p>
+
+<h2>Selected Software and Resources</h2>
+
+<ul>
+  <li><a href="https://github.com/BioAI-Systems-Lab/WinnowNet">WinnowNet</a>:
+    deep learning-based filtering for peptide-spectrum matches in
+    metaproteomics.</li>
+  <li><a href="https://github.com/BioAI-Systems-Lab/SEMQuant">SEMQuant</a>:
+    quantitative metaproteomics with match-between-runs support.</li>
+  <li><a href="https://github.com/BioAI-Systems-Lab/MetaLP">MetaLP</a>:
+    protein inference in metaproteomics using an integrative linear
+    programming framework.</li>
+  <li><a href="https://github.com/BioAI-Systems-Lab/IDIA">IDIA</a>:
+    pseudo-spectrum extraction for data-independent acquisition
+    proteomics.</li>
+  <li><a href="https://github.com/BioAI-Systems-Lab/CloudProteoAnalyzer">CloudProteoAnalyzer</a>:
+    scalable cloud-based proteomics data analysis.</li>
+  <li><a href="https://github.com/BioAI-Systems-Lab/Transformer-DIA">Transformer-DIA</a>:
+    transformer-based de novo peptide sequencing for DIA mass
+    spectrometry.</li>
+  <li><a href="https://github.com/BioAI-Systems-Lab/DeepFilter">DeepFilter</a>:
+    deep learning for peptide identification in metaproteomics.</li>
+  <li><a href="{{ '/R15.html' | relative_url }}">NIH/NLM R15 Project</a>:
+    lab project page for computational framework development in
+    metaproteomics using DIA.</li>
+  <li><a href="{{ '/publications.html' | relative_url }}">Selected Publications</a>:
+    full publication list for the lab.</li>
+</ul>
+
+<h2>Representative Publications</h2>
+
+<ul>
+  <li><a href="https://www.nature.com/articles/s41467-025-63977-z">Enhancing peptide identification in metaproteomics through curriculum learning in deep learning</a>, Nature Communications, 2025.</li>
+  <li><a href="https://link.springer.com/article/10.1186/s40168-024-01866-1">Proteomic stable isotope probing with an upgraded Sipros algorithm for improved identification and quantification of isotopically labeled proteins</a>, Microbiome, 2024.</li>
+  <li><a href="https://academic.oup.com/bioinformaticsadvances/article/4/1/vbae024/7613684">CloudProteoAnalyzer: scalable processing of big data from proteomics using cloud computing</a>, Bioinformatics Advances, 2024.</li>
+  <li><a href="https://doi.org/10.1371/journal.pcbi.1010603">MetaLP: An integrative linear programming method for protein inference in metaproteomics</a>, PLOS Computational Biology, 2022.</li>
+  <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8435027/">Deep learning for peptide identification from metaproteomics datasets</a>, Journal of Proteomics, 2021.</li>
+  <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10077956/">IDIA: An Integrative Signal Extractor for Data-Independent Acquisition Proteomics</a>, IEEE BIBM, 2022.</li>
+</ul>
+
+<p>Students interested in this area can also see our
+  <a href="{{ '/ura.html' | relative_url }}">undergraduate research assistantship page</a>
+  for opportunities related to mass spectrometry and computational
+  proteomics.</p>

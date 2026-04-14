@@ -10,6 +10,11 @@ scripts:
   - /js/slide_show.js
 ---
 
+{% assign news_page = site.pages | where: "name", "news.html" | first %}
+{% assign news_paragraphs = news_page.content | split: '<p>' %}
+{% assign news_intro_html = news_paragraphs[1] | split: '</p>' | first %}
+{% assign news_intro_text = news_intro_html | strip_html | strip_newlines | strip %}
+
 <div class="slideshow-container" id="homepage-slideshow" aria-label="Research highlights">
   <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="1 of 4">
     <div class="numbertext">1 / 4</div>
@@ -18,18 +23,18 @@ scripts:
   </div>
   <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="2 of 4">
     <div class="numbertext">2 / 4</div>
-    <img src="{{ '/images/img1.png' | relative_url }}" style="width:100%" alt="Visualization representing mass spectrometry metaproteomics research" />
-    <div class="text">Mass Spectrometry Metaproteomics</div>
+    <a href="{{ '/research_computational_proteomics.html' | relative_url }}"><img src="{{ '/images/img1.png' | relative_url }}" style="width:100%" alt="Visualization representing computational proteomics research" /></a>
+    <div class="text">Computational Proteomics</div>
   </div>
   <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="3 of 4">
     <div class="numbertext">3 / 4</div>
-    <img src="{{ '/images/img2.png' | relative_url }}" style="width:100%" alt="Visualization representing genome-wide association studies research" />
+    <a href="{{ '/research_genome_wide_association_studies.html' | relative_url }}"><img src="{{ '/images/img2.png' | relative_url }}" style="width:100%" alt="Visualization representing genome-wide association studies research" /></a>
     <div class="text">Genome-wide Association Studies</div>
   </div>
   <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="4 of 4">
     <div class="numbertext">4 / 4</div>
-    <img src="{{ '/images/img3.png' | relative_url }}" style="width:100%" alt="Visualization representing metagenomics sequence assembly research" />
-    <div class="text">Metagenomics Sequence Assembling</div>
+    <a href="{{ '/research_genome_sequence_assembling.html' | relative_url }}"><img src="{{ '/images/img3.png' | relative_url }}" style="width:100%" alt="Visualization representing genome sequence assembling research" /></a>
+    <div class="text">Genome Sequence Assembling</div>
   </div>
   <button class="prev" type="button" onclick="plusSlides(-1)" aria-controls="homepage-slideshow" aria-label="Previous slide">&#10094;</button> <button class="next" type="button" onclick="plusSlides(1)" aria-controls="homepage-slideshow" aria-label="Next slide">&#10095;</button>
 </div>
@@ -50,5 +55,9 @@ scripts:
     <h2><a href="{{ '/opening.html' | relative_url }}" onclick="return false;">Opening</a></h2>
     <p>Ph.D. teaching/research assistant positions are available in the area of
       Computational Biology.</p>
+  </div>
+  <div id="news"><img src="{{ '/images/News.png' | relative_url }}" alt="" />
+    <h2><a href="{{ '/news.html' | relative_url }}">News</a></h2>
+    <p>{{ news_intro_text }}</p>
   </div>
 </div>
