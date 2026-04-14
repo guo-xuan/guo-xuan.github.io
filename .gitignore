@@ -1,0 +1,6 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+_site_verify_*/
+docs/
+README.md

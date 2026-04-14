@@ -1,0 +1,36 @@
+{% assign page_lang = page.lang | default: 'en' %}
+{% assign page_doctype = page.doctype | default: 'strict' %}
+{% if page_doctype == 'transitional' %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% else %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% endif %}
+<html lang="{{ page_lang }}" xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page_lang }}">
+{% include head.html %}
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="main-container">
+      <header id="header-placeholder">
+        {% include site-header.html %}
+      </header>
+      <main id="main-content" tabindex="-1">
+        {{ content }}
+      </main>
+      <footer id="foot-placeholder">
+        {% include site-footer.html %}
+      </footer>
+    </div>
+    {% if page.scripts %}
+    {% for script in page.scripts %}
+    {% if script contains '://' %}
+    <script src="{{ script }}"></script>
+    {% else %}
+    <script src="{{ script | relative_url }}"></script>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% if page.body_end_extra %}
+    {{ page.body_end_extra }}
+    {% endif %}
+  </body>
+</html>

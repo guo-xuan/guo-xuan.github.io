@@ -1,0 +1,54 @@
+---
+layout: default
+title: "Home | BioAI Systems Lab"
+description: "An AI-Native Computational Biology Lab for developing computational methods for machine learning, omics data analysis, and high-performance computing."
+stylesheets:
+  - /stylesheets/index.css
+  - /stylesheets/w3.css
+  - /stylesheets/common.css
+scripts:
+  - /js/slide_show.js
+---
+
+<div class="slideshow-container" id="homepage-slideshow" aria-label="Research highlights">
+  <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="1 of 4">
+    <div class="numbertext">1 / 4</div>
+    <a href="{{ '/research_ai_for_science.html' | relative_url }}"><img src="{{ '/images/AI4Science.png' | relative_url }}" style="width:100%" alt="Visualization representing AI for Science research" /></a>
+    <div class="text">AI for Science</div>
+  </div>
+  <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="2 of 4">
+    <div class="numbertext">2 / 4</div>
+    <img src="{{ '/images/img1.png' | relative_url }}" style="width:100%" alt="Visualization representing mass spectrometry metaproteomics research" />
+    <div class="text">Mass Spectrometry Metaproteomics</div>
+  </div>
+  <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="3 of 4">
+    <div class="numbertext">3 / 4</div>
+    <img src="{{ '/images/img2.png' | relative_url }}" style="width:100%" alt="Visualization representing genome-wide association studies research" />
+    <div class="text">Genome-wide Association Studies</div>
+  </div>
+  <div class="mySlides fade" role="group" aria-roledescription="slide" aria-label="4 of 4">
+    <div class="numbertext">4 / 4</div>
+    <img src="{{ '/images/img3.png' | relative_url }}" style="width:100%" alt="Visualization representing metagenomics sequence assembly research" />
+    <div class="text">Metagenomics Sequence Assembling</div>
+  </div>
+  <button class="prev" type="button" onclick="plusSlides(-1)" aria-controls="homepage-slideshow" aria-label="Previous slide">&#10094;</button> <button class="next" type="button" onclick="plusSlides(1)" aria-controls="homepage-slideshow" aria-label="Next slide">&#10095;</button>
+</div>
+<br />
+<div style="text-align:center"> <button class="dot" type="button" onclick="currentSlide(1)" aria-controls="homepage-slideshow" aria-label="Show slide 1"></button>
+  <button class="dot" type="button" onclick="currentSlide(2)" aria-controls="homepage-slideshow" aria-label="Show slide 2"></button> <button class="dot" type="button" onclick="currentSlide(3)" aria-controls="homepage-slideshow" aria-label="Show slide 3"></button> <button class="dot" type="button" onclick="currentSlide(4)" aria-controls="homepage-slideshow" aria-label="Show slide 4"></button>
+</div>
+<p>BioAI Systems Lab is developing bioinformatics tools and
+  applying these revolutionary technologies to critical scientific and
+  engineering applications related to biology.</p>
+<div id="topics">
+  <div id="research"><img src="{{ '/images/research.png' | relative_url }}" alt="" />
+    <h2><a href="{{ '/research.html' | relative_url }}">Research</a></h2>
+    <p>Big Data Analytics and Machine Learning and its applications in
+      biology, environment, and health.</p>
+  </div>
+  <div id="opening"><img src="{{ '/images/opening.png' | relative_url }}" alt="" />
+    <h2><a href="{{ '/opening.html' | relative_url }}" onclick="return false;">Opening</a></h2>
+    <p>Ph.D. teaching/research assistant positions are available in the area of
+      Computational Biology.</p>
+  </div>
+</div>

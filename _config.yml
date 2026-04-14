@@ -1,0 +1,28 @@
+title: "BioAI Systems Lab"
+description: "Lab website for the BioAI Systems Lab at the University of North Texas"
+url: "https://guo-xuan.github.io"
+baseurl: ""
+markdown: kramdown
+exclude:
+  - README.md
+  - docs
+  - .jekyll-cache
+  - BlueGriffon
+  - _site
+  - _site_verify_ci
+  - _site_verify_ruby334
+  - _site_verify_t05
+  - _site_verify_t06
+  - _site_verify_t07
+  - _site_verify_t08
+  - _site_verify_t09
+  - _site_verify_t10
+  - _site_verify_t11
+  - _site_verify_t12
+  - header.html
+  - foot.html
+  - header_backup.html
+  - index_bak.html
+  - opening_backup.html
+  - Guo_Lab_Opening.pdf
+  - MyPaper.bibtex
